@@ -1,69 +1,49 @@
 @import 'normalize';
 
+body {
+    background-image:url(/images/ski-backround.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 body, header {
-    margin: 0;
-    padding:20px;
+    margin:0;
+    padding:10px;
+    border-collapse: separate;
 }
 
 header {
-    background-color:lightcoral;
+    background-color:rgb(0, 0, 0);
     display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
+    opacity:0.5;
 }
 
-.img-of-me {
-    border-radius: 70%;
-}
-
-h1 {
-    font-family: 'Libre Baskerville', sans-serif;
-    font-style: italic;
-    font-size: 3em;
-    text-align: center;
-    
-}
-
-.about-me {
-    display:flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    margin:10px;
-}
-
-.contact-me {
-    display:flex;
-    flex-direction: column;
-}
-
-.my-portfolio {
-    display:grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: 200px;
-}
-
-.page-1 p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1em;
-}
-
-.page-2 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-}
-
-.page-3 p {
-    font-family: 'Dosis', sans-serif;
-    font-size: 2em;
+.header-name-cv {
+    text-shadow: 4px 4px 0px #f8eded;
+    mix-blend-mode: screen;
+    animation: fadeIn 2.5s linear forwards;
+  }
+  
+  @keyframes fadeIn {
+      0% {
+          opacity: 0;
+      }
+  
+      100% {
+          opacity: 1;
+      }
 }
 
 .main-menu {
-    position: sticky;
     font-size: 1.5em;
     font-family: 'Fuzzy Bubbles', cursive;
-    font-weight:bold;
-
+    font-weight:800;
+    padding:10px;
 }
 
   ul {
@@ -71,22 +51,99 @@ h1 {
     margin: 0;
     padding: 0;
     width: 200px;
-
   }
   
   li a {
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 8px 16px;
-    text-decoration: none;
-  }
-  
-  li a.active {
-    background-color: #04AA6D;
-    color: white;
+    text-decoration: underline;
   }
   
   li a:hover:not(.active) {
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(40, 217, 223);
     color: white;
   }
+
+.img-of-me {
+    border-radius: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: italic;
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    top:10px;
+}
+
+.about-me {
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    margin:10px;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.contact-me {
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-portfolio {
+    display:grid;
+    padding:10px;
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+    grid-auto-columns: 300px 100px;
+}
+
+.work-experience {
+    display:grid;
+    padding:10px;
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+    grid-auto-columns: 300px 100px;
+}
+
+.page-1 p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: rgba(5, 6, 5, 0.696);
+
+}
+
+.page-2 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: rgb(236, 216, 216);
+}
+
+.page-3 p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+    color: rgb(236, 216, 216);
+    align-self: center;
+    justify-self: center;
+}
+
+.page-4 article {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    color: rgb(236, 216, 216);
+    font-weight: 300;
+    align-self: center;
+    justify-self: center;
+}
