@@ -1,26 +1,38 @@
 @import 'normalize';
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background-image:url(/images/ski-backround.jpeg);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    height:100%;
 }
 
-body, header {
-    margin:0;
-    padding:10px;
-    border-collapse: separate;
+section {
+    margin:1rem;
+    background-color: hsla(0, 0%, 78%, 0.7);
 }
 
 header {
-    background-color:rgb(0, 0, 0);
+    background-image:url(/images/header-background.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    width:100%;
+    height:100vh;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    opacity:0.5;
 }
 
 .header-name-cv {
@@ -55,7 +67,7 @@ header {
   
   li a {
     display: block;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.756);
     padding: 8px 16px;
     text-decoration: underline;
   }
@@ -66,20 +78,28 @@ header {
   }
 
 .img-of-me {
-    border-radius: 30%;
+    border-radius: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    opacity:0.9;
 }
 
 h1 {
     font-family: 'Libre Baskerville', sans-serif;
-    font-style: italic;
     font-size: 3rem;
     text-align: center;
     position: relative;
     top:10px;
 }
+
+h2, h3, h4 {
+    font-family:'Times New Roman', Times, serif;
+    font-size:3rem;
+    text-align:center;
+}
+
+
 
 .about-me {
     display:flex;
@@ -87,19 +107,7 @@ h1 {
     flex-wrap:wrap;
     margin:10px;
     padding:20px;
-    justify-content: center;
-    align-items: center;
-
-    
-}
-
-.contact-me {
-    display:flex;
-    flex-direction: column;
-    padding:10px;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 
 .my-portfolio {
@@ -111,39 +119,86 @@ h1 {
 }
 
 .work-experience {
-    display:grid;
-    padding:10px;
-    grid-auto-rows: 100px;
-    grid-auto-flow: dense;
-    grid-auto-columns: 300px 100px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+article {
+    padding:20px;
+    margin:20px;
 }
 
 .page-1 p {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     color: rgba(5, 6, 5, 0.696);
-
 }
 
 .page-2 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
-    color: rgb(236, 216, 216);
+    color: rgba(5, 6, 5, 0.696);
 }
 
-.page-3 p {
+.page-3 article {
     font-family: 'Dosis', sans-serif;
-    font-size: 2em;
-    color: rgb(236, 216, 216);
-    align-self: center;
-    justify-self: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(5, 6, 5, 0.696);
 }
 
-.page-4 article {
-    font-family: 'Rubik', sans-serif;
-    font-size: 2em;
-    color: rgb(236, 216, 216);
-    font-weight: 300;
-    align-self: center;
-    justify-self: center;
+.page-1 {
+    border-radius: 50px;
+    border: 5px solid #070904;
+}
+
+.page-2 {
+    border-radius: 50px;
+    border: 10px solid #070904;
+}
+
+.page-3 {
+    border-radius: 50px;
+    border: 10px solid #070904;
+}
+
+footer {
+    position:relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.contact-me {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin:15px;
+}
+
+.top-btn {
+    position:sticky;
+    left:90%;
+    bottom:20px;
+    background-image: linear-gradient(#0dccea, #0d70ea);
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        color:#f8eded;
+    }
+    
+    .top-btn {
+    }
 }

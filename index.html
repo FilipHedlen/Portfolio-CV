@@ -3,40 +3,49 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CV med CSS</title>
+        <title>Filip Hedlén</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style/style.css" type="text/css">
         <script src="https://kit.fontawesome.com/9ec5564a33.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Fuzzy+Bubbles:wght@400;700&family=Libre+Baskerville:ital@0;1&family=Oswald:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Fuzzy+Bubbles:wght@400;700&family=Libre+Baskerville:ital@0;1&family=Lobster&family=Oswald:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     </head>
 
 
 
     <body>
+
         <header>
-            <h1 class="header-name-cv" tabindex="1">Filip Hedlén<br>Curriculum vitae</h1>
+            <h1 class="header-name-cv" tabindex="1">Filip Hedlén</h1>
             <nav class="main-menu" role="navigation">
                 <ul>
                     <li><a href="#page-1" tabindex="2">About me</a></li>
-                    <li><a href="#page-2" tabindex="3">Contact</a></li>
-                    <li><a href="#page-3" tabindex="4">My Portfolio</a></li>
-                    <li><a href="#page-4" tabindex="5">Work experience</a></li>
+                    <li><a href="#page-2" tabindex="3">My portfolio</a></li>
+                    <li><a href="#page-3" tabindex="4">Work experience</a></li>
+                    <li><a href="#footer" tabindex="5">Contact me</a></li>
                 </ul>
             </nav>
         </header>
+
+
+
         
         <section class="page-1" id="page-1">
-            <h1 tabindex="6">About me</h1>
-            <img src="/images/rsz_rsz_2snapchat-1249303853[882]iiiii.jpg" alt="picture-of-filip" class="img-of-me" tabindex="7">
+            <h2 tabindex="6">About me</h2>
+            <img src="/images/profile-photo.jpg" 
+                 width="150" height="325" 
+                 alt="smiling person with short darkblonde hair and a black shirt" 
+                 class="img-of-me" 
+                 tabindex="7" 
+                 loading="lazy">
+
             <div class="about-me">
                 <p tabindex="8">
                    Who am I? A 27 year old Front-end developing student from<br>
                    Stockholm, Sweden.<br>
-                   I'm quite new to tech overall but I really enjoy the process!<br>
-                </p>
-                <p tabindex="9">
+                   I'm quite new to tech overall but I really enjoy the process!
+                   <br><br>
                    When I am not sitting behind my laptop or sweating in the gym<br>
                    I enjoy skiing, music of all sorts, the sun<br>
                    and hanging my friends and family!
@@ -44,37 +53,38 @@
             </div>
         </section>
 
-
         <section class="page-2" id="page-2">
-            <h1 tabindex="10">Contact me</h1>
-            <div class="contact-me">
-                <p tabindex="11">Lars Filip Hedlén</p>
-                <p tabindex="12">+46 762733899</p>
-                <p tabindex="13"><a href="mailto:filip.hedlen@gmail.com"><i class="fa-solid fa-envelope"></i></i></i></a></p>
-                <p tabindex="14"><a href="https://www.linkedin.com/in/filip-hedl%C3%A9n-04b489252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <h3 tabindex="9">My portfolio</h3>
+            <div class="my-portfolio">
+                <p tabindex="10">Lorem ipsum</p>
+                <p tabindex="11">Lorem ipsum</p>
+                <p tabindex="12">Lorem ipsum</p>
+                <p tabindex="13">Lorem ipsum</p>
+                <p tabindex="14">Lorem ipsum</p>
             </div>
         </section>
 
         <section class="page-3" id="page-3">
-            <h1 tabindex="15">My portfolio</h1>
-            <div class="my-portfolio">
-                <p tabindex="16">Lorem ipsum</p>
-                <p tabindex="17">Lorem ipsum</p>
-                <p tabindex="18">Lorem ipsum</p>
-                <p tabindex="19">Lorem ipsum</p>
-                <p tabindex="20">Lorem ipsum</p>
+            <h4 tabindex="15">Work experience</h4>
+            <div class="work-experience">
+                <article tabindex="16">Jan 2015 - Jan 2017<br>Liftconstructor - Full time<br>at Mankan Hiss AB<br></article>
+                <article tabindex="17">Jan 2017 - April 2021<br>Warehouseworker - Full time<br>at Klinger Sweden AB<br></article>
+                <article tabindex="18">May 2021 - July 2021<br>Orderpicker - Part time<br>at Bauhaus & Co<br></article>
+                <article tabindex="19">July 2021 - Oktober 2022<br>Deliverypersonell - Part/Full time<br>at Nordic green design AB<br></article>
             </div>
         </section>
 
-        <section class="page-4" id="page-4">
-            <h1 tabindex="21">Work experience</h1>
-            <div class="work-experience">
-                <article tabindex="22">hej</article>
-                <article tabindex="23">hej</article>
-                <article tabindex="24">hej</article>
-                <article tabindex="25">hej</article>
+        <button class="top-btn"><a href="#">To the top</a></button>
+
+        <footer class="footer" id="footer">
+            <div class="contact-me">
+                <p tabindex="21">Filip Hedlén</p>
+                <p tabindex="22"><a href="mailto:filip.hedlen@gmail.com"><i class="fa-regular fa-envelope"></i></a></p>
+                <p tabindex="23"><a href="https://www.linkedin.com/in/filip-hedl%C3%A9n-04b489252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
+                <p tabindex="24"><a href="lorem ipsum"><i class="fa-brands fa-github"></i></a></p>
             </div>
-        </section>
+        </footer>
+
 
     
 
